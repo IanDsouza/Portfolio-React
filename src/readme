@@ -1,0 +1,71 @@
+
+Components: 
+1. Start with capital
+2. Top imports - imp ones like Components etc, Bottom is for material imports etc
+
+
+
+
+Functional components : rfc - tab
+(User for Dumb 1components which dont need any lifecycle)
+
+
+COLOR SCHEMA:
+
+    background: #1B242F;
+    border-bottom: 3px solid #04C2C9;
+    text color: #E31B6D;
+    title :     color: #444649;
+    bold text color: #616161;
+
+
+VSC: 
+open terminal : crtl + `
+
+
+
+Redux:
+1. Build a store
+- need state and reducers
+- reducers have some functionality with initial state
+..Reducer(state,action ) {
+    based on the action 
+    make some changes in state and return it 
+    like increment / decrement 
+}
+and then export it
+
+import PROVIDER in main component like app.js to inject global store
+(whatever we pass to it is available globally
+)
+
+now step 1 in app js 
+user reducer to create store!!!
+createstore('reducer name')
+
+2. pass the store to the provider for global access
+3.  for using incremnt / decrement from component use PROPS because we cant use state
+
+4 create fun which dispaches action "age-up etc"
+
+
+
+
+API CALLS: 
+
+login = () => {
+    ServerAddr.get("blog/").then(res => {
+      console.log("ress", res);
+      // if(res.data.status){
+      //   localStorage.setItem('access_token', res.data.data.access_token);
+      //   localStorage.setItem('refresh_token', res.data.data.refresh_token);
+      //   this.setState({
+      //     routeToDashoard: true
+      //   })
+      //   // this.context.router.history.push(`/dashboard`);
+      // }else{
+      //   alert(res.data.validation);
+      // }
+    });
+  };
+

@@ -1,0 +1,10 @@
+.content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  /* padding-top: 20px; */
+}
+
+.content > div {
+  margin: 10px 0;
+}

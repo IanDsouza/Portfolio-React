@@ -1,0 +1,83 @@
+section {
+  background: #252934;
+  color: #fff;
+  padding-top: 175px;
+  width: 100%;
+  position: relative;
+}
+
+section svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#worktext {
+  font-weight: 600;
+  color: #04c2c9;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.title {
+  margin-top: 50px;
+}
+.titletextc {
+  font-size: 30pt;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: sans-serif;
+}
+
+#inputwrapper {
+  width: 40%;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+  padding: 10px 15px;
+  background: #1e242c;
+  font-size: 12pt;
+  margin-bottom: 3px;
+  color: #fff;
+  margin-top: 5px !important;
+}
+
+.custombuttoncontact {
+  background-color: #1e242c;
+  border: 1px solid white;
+  color: #1b242f;
+  text-align: center;
+  width: 160px;
+  cursor: pointer;
+  height: 45px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  position: relative;
+  float: right;
+  margin-top: 5px;
+}
+.custombuttoncontact p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+.custombuttoncontact:hover {
+  background-color: #04c2c9;
+  color: white;
+}
+
+/* contact animations */
+
+@media screen and (min-width: 600px) {
+  section {
+    line-height: 18pt;
+    padding: 100px 0 130px 0;
+  }
+}

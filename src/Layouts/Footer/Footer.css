@@ -1,0 +1,28 @@
+footer {
+  background: #1b242f;
+  padding: 70px 0 50px 0;
+  position: relative;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.icons a {
+  margin-left: 30px;
+}
+
+.footnote {
+  font-size: 10pt;
+  color: #8f9aa7;
+  margin-top: 35px;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.highlight {
+  font-family: "Open Sans";
+  color: #e31b6d;
+}

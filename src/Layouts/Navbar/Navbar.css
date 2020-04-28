@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-weight: 300;
+  color: beige;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+  top: 0;
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  color: white;
+  font-weight: 100;
+  height: 60px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 10%;
+}
+
+li {
+  text-transform: uppercase;
+  font-size: 16px;
+  height: 100%;
+  -ms-flex: 1;
+  flex: initial;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-left: 3%;
+}
+
+li:hover {
+  /* background: #848484; */
+  color: #e31b6d;
+}
+
+.fixed-nav {
+  position: fixed;
+}
+
+/* responsive Navbar */
+
+header {
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  height: 5px;
+  cursor: pointer;
+  line-height: 20px;
+  color: #0e0a53;
+  text-decoration: none;
+  /* display: block; */
+  font-size: 14px;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  text-decoration: underline;
+  /* color: #FFF; */
+  color: #d7e020;
+}
+
+header nav ul li p:hover {
+  color: #fff;
+  background: #d7e020;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+}
+
+@media (max-width: 990px) {
+  header {
+    padding-right: 5px;
+    position: fixed;
+  }
+
+  .menu-toggle {
+    cursor: pointer;
+    display: block;
+  }
+  .menu-toggle-disable {
+    display: none;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh -50px);
+    top: 55px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  header nav.active {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+    text-align: center;
+    background-color: #1b242f;
+    color: white;
+  }
+
+  header nav ul li {
+    border-bottom: 3px solid #04c2c9;
+  }
+
+  header nav ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    line-height: 0;
+  }
+}

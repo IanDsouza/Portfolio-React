@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+}
+
+.titletext {
+  font-size: 30pt;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444649;
+  font-family: sans-serif;
+}
+
+.gallery1div {
+  height: 100%;
+}
+
+.galleryrow {
+  /* height: 300px; */
+}
+
+.image1 {
+  cursor: pointer;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  /* height: 100%; */
+  height: 300px;
+  background-size: cover !important;
+  width: 100%;
+}
+
+.imgoverlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+}
+
+.gallery1div:hover .imgoverlay {
+  opacity: 1;
+}
+
+.buttonmaindiv {
+  margin-top: 20%;
+  text-align: center;
+}
+
+/* BUTTON */
+
+.custombutton {
+  background-color: white;
+  border: 2px solid #e31b6d;
+  color: #1b242f;
+  text-align: center;
+  width: 160px;
+  cursor: pointer;
+  height: 45px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.custombutton p {
+  margin-top: 7px;
+  font-size: 18px;
+}
+.custombutton:hover {
+  background-color: #e31b6d;
+  color: white;
+}
+
+/* BUTTON END */
+
+.descriptiondiv {
+  padding-top: 3%;
+  padding-left: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .gallery1div {
+    margin-bottom: 20px;
+  }
+}

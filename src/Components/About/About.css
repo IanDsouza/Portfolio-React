@@ -1,0 +1,57 @@
+.titletext {
+  font-size: 30pt;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444649;
+  font-family: sans-serif;
+}
+.customhr {
+  margin-top: -1rem;
+  margin-bottom: 30px;
+  border: 0;
+  border-top: 4px solid #1b242f;
+  width: 6%;
+}
+
+.collapsed {
+  width: 0 !important;
+}
+
+.userimg1 {
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  display: block;
+  /* border-radius: 50%; */
+}
+
+/* SKILL  CHART */
+
+.skillbar-percent {
+  color: transparent !important;
+}
+.skillname {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 13px;
+  padding-top: 4px;
+}
+.exp {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  margin-top: -20px;
+}
+
+/* SKILL  CHART END */
+
+.descriptionwrapper {
+}
+.descriptiondiv {
+}
+.desctext {
+  color: #616161;
+}
