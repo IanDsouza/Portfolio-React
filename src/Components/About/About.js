@@ -55,34 +55,34 @@ class About extends Component {
         <Row>
           <Col md={6}>
             <div className="userimgdiv">
-              <Slide left delay={200} duration={3000}>
-                <div>
-                  <img
-                    className="userimg1"
-                    src={require("../../../media/ianfullimage.jpg")}
-                  />
-                </div>
-              </Slide>
+              {/* <Slide left delay={200} duration={3000}> */}
+              <div>
+                <img
+                  className="userimg1"
+                  src={require("../../../media/ianfullimage.jpg")}
+                />
+              </div>
+              {/* </Slide> */}
             </div>
           </Col>
           <Col md={6}>
-            <Slide right delay={400} duration={3000}>
-              <div className="descriptionwrapper">
-                <div className="descriptiondiv">
-                  <h3 style={{ textAlign: "center", color: "#616161" }}>
-                    Who's this guy?
-                  </h3>
-                  <p className="desctext">
-                    I am a passionate computer engineer and full-stack developer
-                    with more than two years of experience. Its my passsion to
-                    build web and mobile applications. This is a personal
-                    website created by me, providing insights of my professional
-                    interests, experiences, Feel free to look around.
-                  </p>
-                </div>
+            {/* <Slide right delay={400} duration={3000}> */}
+            <div className="descriptionwrapper">
+              <div className="descriptiondiv">
+                <h3 style={{ textAlign: "center", color: "#616161" }}>
+                  Who's this guy?
+                </h3>
+                <p className="desctext">
+                  I am a passionate computer engineer and full-stack developer
+                  with more than two years of experience. Its my passsion to
+                  build web and mobile applications. This is a personal website
+                  created by me, providing insights of my professional
+                  interests, experiences, Feel free to look around.
+                </p>
               </div>
-              <SkillBar skills={SKILLS} colors={skillcolours} height={22} />
-            </Slide>
+            </div>
+            <SkillBar skills={SKILLS} colors={skillcolours} height={22} />
+            {/* </Slide> */}
           </Col>
         </Row>
         <div style={{ height: 100 }}></div>
